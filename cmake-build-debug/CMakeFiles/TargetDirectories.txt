@@ -1,0 +1,4 @@
+C:/Users/perci/CLionProjects/CellGame/cmake-build-debug/CMakeFiles/CellGame.dir
+C:/Users/perci/CLionProjects/CellGame/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/perci/CLionProjects/CellGame/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/perci/CLionProjects/CellGame/cmake-build-debug/CMakeFiles/CellGame_autogen.dir

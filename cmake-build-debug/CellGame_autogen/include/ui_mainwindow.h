@@ -12,7 +12,6 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QHBoxLayout>
-#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
@@ -32,7 +31,6 @@ public:
     QSpacerItem *verticalSpacer_2;
     QHBoxLayout *horizontalLayout_2;
     QSpacerItem *horizontalSpacer_4;
-    QLabel *label;
     QSpacerItem *horizontalSpacer_3;
     QSpacerItem *verticalSpacer_3;
     QHBoxLayout *horizontalLayout;
@@ -75,11 +73,6 @@ public:
         horizontalSpacer_4 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         horizontalLayout_2->addItem(horizontalSpacer_4);
-
-        label = new QLabel(verticalLayoutWidget);
-        label->setObjectName(QString::fromUtf8("label"));
-
-        horizontalLayout_2->addWidget(label);
 
         horizontalSpacer_3 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
@@ -138,7 +131,6 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
-        label->setText(QApplication::translate("MainWindow", "TextLabel", nullptr));
         startBtn->setText(QApplication::translate("MainWindow", "\345\274\200\345\247\213\346\270\270\346\210\217", nullptr));
     } // retranslateUi
 

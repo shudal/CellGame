@@ -10,11 +10,12 @@ MainWindow::MainWindow(QWidget *parent) :
     ui_->setupUi(this);
     ui_->centralwidget->setLayout(ui_->mainLayout);
     this->setWindowTitle(QString(main_title_.c_str()));
-    ui_->label->setPixmap(QPixmap::fromImage(QImage(Config::GetConfig()->HAP_SRC.c_str())));
 
-    QLabel l = QLabel();
-    l.setPixmap(QPixmap::fromImage(QImage(Config::GetConfig()->HAP_SRC.c_str())));
-
+    QPixmap bkgnd(Config::GetConfig()->MAIN_BG_SRC.c_str());
+    bkgnd = bkgnd.scaled(this->size(), Qt::IgnoreAspectRatio);
+    QPalette palette;
+    palette.setBrush(QPalette::Background, bkgnd);
+    this->setPalette(palette);
 
     connect(ui_->startBtn, SIGNAL(released()), this, SLOT(startGame()));
 }
@@ -26,6 +27,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::startGame() {
     qDebug("hi");
+
     setRandomGameWidget();
     gw_->show();
 }

@@ -23,5 +23,7 @@ public:
     const int STATUS_HAP = 1;
     const int STATUS_SAD = 0;
     const std::string MAIN_TITLE = "生命游戏";
+    const std::string MAIN_BG_SRC = "mainbg.jpg";
+
 };
 #endif //CELLGAME_CONFIG_H

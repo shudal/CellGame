@@ -24,6 +24,12 @@ void GameWidget::commonInit() {
     setupTimer();
     qRegisterMetaType<std::vector<std::vector<int>>>("std::vector<std::vector<int>>");
     connect(this, SIGNAL(changeStateSignal(std::vector<std::vector<int>>)), this, SLOT(changeStateSlot(std::vector<std::vector<int>>)));
+
+    QPixmap bkgnd(Config::GetConfig()->MAIN_BG_SRC.c_str());
+    bkgnd = bkgnd.scaled(this->size(), Qt::IgnoreAspectRatio);
+    QPalette palette;
+    palette.setBrush(QPalette::Background, bkgnd);
+    this->setPalette(palette);
 }
 
 // setupUi在setupVar后

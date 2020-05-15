@@ -23,6 +23,11 @@
 			"EHXCJE2HJL/moc_MainWindow.cpp"
 		],
 		[
+			"C:/Users/perci/CLionProjects/CellGame/src/utility/CellGameCore.h",
+			"MU",
+			"J4QXNF3AB7/moc_CellGameCore.cpp"
+		],
+		[
 			"C:/Users/perci/CLionProjects/CellGame/src/utility/Rand_int.h",
 			"MU",
 			"J4QXNF3AB7/moc_Rand_int.cpp"
@@ -86,6 +91,10 @@
 		],
 		[
 			"C:/Users/perci/CLionProjects/CellGame/src/ui/window/mainwindow/MainWindow.cpp",
+			"MU"
+		],
+		[
+			"C:/Users/perci/CLionProjects/CellGame/src/utility/CellGameCore.cpp",
 			"MU"
 		]
 	],

@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/CellGame.dir/main.cpp.obj"
   "CMakeFiles/CellGame.dir/src/ui/widget/game/GameWidget.cpp.obj"
   "CMakeFiles/CellGame.dir/src/ui/window/mainwindow/MainWindow.cpp.obj"
+  "CMakeFiles/CellGame.dir/src/utility/CellGameCore.cpp.obj"
   "CellGame.exe"
   "CellGame.exe.manifest"
   "CellGame.pdb"

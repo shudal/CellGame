@@ -243,6 +243,33 @@ src/ui/window/mainwindow/MainWindow.cpp.s:
 	$(MAKE) -f CMakeFiles\CellGame.dir\build.make CMakeFiles/CellGame.dir/src/ui/window/mainwindow/MainWindow.cpp.s
 .PHONY : src/ui/window/mainwindow/MainWindow.cpp.s
 
+src/utility/CellGameCore.obj: src/utility/CellGameCore.cpp.obj
+
+.PHONY : src/utility/CellGameCore.obj
+
+# target to build an object file
+src/utility/CellGameCore.cpp.obj:
+	$(MAKE) -f CMakeFiles\CellGame.dir\build.make CMakeFiles/CellGame.dir/src/utility/CellGameCore.cpp.obj
+.PHONY : src/utility/CellGameCore.cpp.obj
+
+src/utility/CellGameCore.i: src/utility/CellGameCore.cpp.i
+
+.PHONY : src/utility/CellGameCore.i
+
+# target to preprocess a source file
+src/utility/CellGameCore.cpp.i:
+	$(MAKE) -f CMakeFiles\CellGame.dir\build.make CMakeFiles/CellGame.dir/src/utility/CellGameCore.cpp.i
+.PHONY : src/utility/CellGameCore.cpp.i
+
+src/utility/CellGameCore.s: src/utility/CellGameCore.cpp.s
+
+.PHONY : src/utility/CellGameCore.s
+
+# target to generate assembly for a file
+src/utility/CellGameCore.cpp.s:
+	$(MAKE) -f CMakeFiles\CellGame.dir\build.make CMakeFiles/CellGame.dir/src/utility/CellGameCore.cpp.s
+.PHONY : src/utility/CellGameCore.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -265,6 +292,9 @@ help:
 	@echo ... src/ui/window/mainwindow/MainWindow.obj
 	@echo ... src/ui/window/mainwindow/MainWindow.i
 	@echo ... src/ui/window/mainwindow/MainWindow.s
+	@echo ... src/utility/CellGameCore.obj
+	@echo ... src/utility/CellGameCore.i
+	@echo ... src/utility/CellGameCore.s
 .PHONY : help
 
 

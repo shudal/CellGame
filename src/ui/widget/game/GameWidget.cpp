@@ -4,6 +4,8 @@
 
 #include "GameWidget.h"
 #include "../../../include/Config.h"
+#include <thread>
+#include <chrono>
 
 GameWidget::GameWidget() {
     commonInit();
@@ -16,6 +18,7 @@ GameWidget::GameWidget(std::vector<std::vector<int>> ns) {
 void GameWidget::commonInit() {
     setupVar();
     setupUi();
+    setupTimer();
 }
 
 // setupUi在setupVar后
@@ -34,12 +37,12 @@ void GameWidget::setupUi() {
             QPixmap pix;
             if (i < cells_status_.size() && k < cells_status_[i].size()) {
                 if (cells_status_[i][k] == Config::GetConfig()->STATUS_HAP) {
-                    pix = QPixmap::fromImage(hap_img_);
+                    pix = hap_pix_map_;
                 } else {
-                    pix = QPixmap::fromImage(sad_img_);
+                    pix = sad_pix_map_;
                 }
             } else {
-                pix = QPixmap::fromImage(sad_img_);
+                pix = sad_pix_map_;
             }
             cells_[i-1][k-1]->setPixmap(pix.scaled(cells_[i-1][k-1]->size(), Qt::KeepAspectRatio));
             cells_[i-1][k-1]->setParent(this);
@@ -51,8 +54,22 @@ void GameWidget::setupUi() {
 void GameWidget::setupVar() {
     cell_width_  = static_cast<int>(Config::GetConfig()->WINDOW_WIDTH * Config::GetConfig()->GAME_WINDOW_SIZE_RATE / Config::GetConfig()->COLS_COUNT);
     cell_height_ = static_cast<int>(Config::GetConfig()->WINDOW_HEIGHT * Config::GetConfig()->GAME_WINDOW_SIZE_RATE / Config::GetConfig()->ROWS_COUNT);
+
     sad_img_ = QImage(Config::GetConfig()->SAD_SRC.c_str());
     hap_img_ = QImage(Config::GetConfig()->HAP_SRC.c_str());
+    sad_pix_map_ = QPixmap::fromImage(sad_img_);
+    hap_pix_map_ = QPixmap::fromImage(hap_img_);
+}
 
+void GameWidget::setupTimer() {
+    std::thread thread1(evolve, 2);
+    thread1.detach();
+}
+
+void GameWidget::evolve(int circle_seconds) {
+    while (true) {
+        std::this_thread::sleep_for(std::chrono::seconds(circle_seconds));
+        qDebug("tick");
+    }
 }
 

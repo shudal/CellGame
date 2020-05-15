@@ -19,11 +19,16 @@ private:
     void commonInit();
     void setupUi();
     void setupVar();
+    void setupTimer();
+    static void evolve(int);
     std::unique_ptr<QGridLayout> cell_grid_layout_;
     double cell_width_;
     double cell_height_;
     std::vector<std::vector<std::unique_ptr<QLabel>>> cells_;
     std::vector<std::vector<int>> cells_status_;
+
+    QPixmap sad_pix_map_;
+    QPixmap hap_pix_map_;
     QImage sad_img_;
     QImage hap_img_;
 };

@@ -135,6 +135,12 @@
 		<Unit filename="C:/Users/perci/CLionProjects/CellGame/src/ui/window/mainwindow/MainWindow.h">
 			<Option target="CellGame"/>
 		</Unit>
+		<Unit filename="C:/Users/perci/CLionProjects/CellGame/src/utility/CellGameCore.cpp">
+			<Option target="CellGame"/>
+		</Unit>
+		<Unit filename="C:/Users/perci/CLionProjects/CellGame/src/utility/CellGameCore.h">
+			<Option target="CellGame"/>
+		</Unit>
 		<Unit filename="C:/Users/perci/CLionProjects/CellGame/src/utility/Rand_int.h">
 			<Option target="CellGame"/>
 		</Unit>

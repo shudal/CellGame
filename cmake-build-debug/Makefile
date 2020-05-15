@@ -189,6 +189,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\CellGame.dir\build.make CMakeFiles/CellGame.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/ui/widget/game/GameWidget.obj: src/ui/widget/game/GameWidget.cpp.obj
+
+.PHONY : src/ui/widget/game/GameWidget.obj
+
+# target to build an object file
+src/ui/widget/game/GameWidget.cpp.obj:
+	$(MAKE) -f CMakeFiles\CellGame.dir\build.make CMakeFiles/CellGame.dir/src/ui/widget/game/GameWidget.cpp.obj
+.PHONY : src/ui/widget/game/GameWidget.cpp.obj
+
+src/ui/widget/game/GameWidget.i: src/ui/widget/game/GameWidget.cpp.i
+
+.PHONY : src/ui/widget/game/GameWidget.i
+
+# target to preprocess a source file
+src/ui/widget/game/GameWidget.cpp.i:
+	$(MAKE) -f CMakeFiles\CellGame.dir\build.make CMakeFiles/CellGame.dir/src/ui/widget/game/GameWidget.cpp.i
+.PHONY : src/ui/widget/game/GameWidget.cpp.i
+
+src/ui/widget/game/GameWidget.s: src/ui/widget/game/GameWidget.cpp.s
+
+.PHONY : src/ui/widget/game/GameWidget.s
+
+# target to generate assembly for a file
+src/ui/widget/game/GameWidget.cpp.s:
+	$(MAKE) -f CMakeFiles\CellGame.dir\build.make CMakeFiles/CellGame.dir/src/ui/widget/game/GameWidget.cpp.s
+.PHONY : src/ui/widget/game/GameWidget.cpp.s
+
 src/ui/window/mainwindow/MainWindow.obj: src/ui/window/mainwindow/MainWindow.cpp.obj
 
 .PHONY : src/ui/window/mainwindow/MainWindow.obj
@@ -232,6 +259,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/ui/widget/game/GameWidget.obj
+	@echo ... src/ui/widget/game/GameWidget.i
+	@echo ... src/ui/widget/game/GameWidget.s
 	@echo ... src/ui/window/mainwindow/MainWindow.obj
 	@echo ... src/ui/window/mainwindow/MainWindow.i
 	@echo ... src/ui/window/mainwindow/MainWindow.s

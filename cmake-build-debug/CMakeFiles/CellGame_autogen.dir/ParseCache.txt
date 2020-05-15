@@ -3,6 +3,7 @@ C:/Users/perci/CLionProjects/CellGame/src/ui/window/mainwindow/MainWindow.cpp
  uic:ui_mainwindow.h
 C:/Users/perci/CLionProjects/CellGame/mainwindow.h
  mmc:Q_OBJECT
+C:/Users/perci/CLionProjects/CellGame/src/include/Config.h
 C:/Users/perci/CLionProjects/CellGame/main.cpp
 C:/Users/perci/CLionProjects/CellGame/src/ui/window/mainwindow/MainWindow.h
  mmc:Q_OBJECT
@@ -11,3 +12,7 @@ C:/Users/perci/CLionProjects/CellGame/mainwindow.cpp
 C:/Users/perci/CLionProjects/CellGame/src/include/MainWindow.h
  mmc:Q_OBJECT
 C:/Users/perci/CLionProjects/CellGame/src/class/MainWindow.cpp
+C:/Users/perci/CLionProjects/CellGame/src/ui/widget/game/GameWidget.h
+ mmc:Q_OBJECT
+C:/Users/perci/CLionProjects/CellGame/src/ui/widget/game/GameWidget.cpp
+C:/Users/perci/CLionProjects/CellGame/src/utility/Rand_int.h

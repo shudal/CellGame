@@ -8,9 +8,24 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/perci/CLionProjects/CellGame/src/include/Config.h",
+			"MU",
+			"7PH6M6IPMC/moc_Config.cpp"
+		],
+		[
+			"C:/Users/perci/CLionProjects/CellGame/src/ui/widget/game/GameWidget.h",
+			"MU",
+			"H2HAMTERHL/moc_GameWidget.cpp"
+		],
+		[
 			"C:/Users/perci/CLionProjects/CellGame/src/ui/window/mainwindow/MainWindow.h",
 			"MU",
 			"EHXCJE2HJL/moc_MainWindow.cpp"
+		],
+		[
+			"C:/Users/perci/CLionProjects/CellGame/src/utility/Rand_int.h",
+			"MU",
+			"J4QXNF3AB7/moc_Rand_int.cpp"
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -65,6 +80,10 @@
 	"SOURCES" : 
 	[
 		[ "C:/Users/perci/CLionProjects/CellGame/main.cpp", "MU" ],
+		[
+			"C:/Users/perci/CLionProjects/CellGame/src/ui/widget/game/GameWidget.cpp",
+			"MU"
+		],
 		[
 			"C:/Users/perci/CLionProjects/CellGame/src/ui/window/mainwindow/MainWindow.cpp",
 			"MU"

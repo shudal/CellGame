@@ -11,6 +11,6 @@ set(CMAKE_PREFIX_PATH "D:\\install\\mingwsecond\\5.12.8\\mingw73_64\\")
 
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
-add_executable(CellGame main.cpp src/ui/window/mainwindow/MainWindow.h src/ui/window/mainwindow/MainWindow.cpp)
+add_executable(CellGame main.cpp src/ui/window/mainwindow/MainWindow.h src/ui/window/mainwindow/MainWindow.cpp src/ui/widget/game/GameWidget.cpp src/ui/widget/game/GameWidget.h src/include/Config.h src/utility/Rand_int.h)
 target_link_libraries(CellGame Qt5::Widgets)
 qt5_use_modules(CellGame Core Widgets Gui)

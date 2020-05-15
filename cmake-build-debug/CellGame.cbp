@@ -120,10 +120,22 @@
 		<Unit filename="C:/Users/perci/CLionProjects/CellGame/main.cpp">
 			<Option target="CellGame"/>
 		</Unit>
+		<Unit filename="C:/Users/perci/CLionProjects/CellGame/src/include/Config.h">
+			<Option target="CellGame"/>
+		</Unit>
+		<Unit filename="C:/Users/perci/CLionProjects/CellGame/src/ui/widget/game/GameWidget.cpp">
+			<Option target="CellGame"/>
+		</Unit>
+		<Unit filename="C:/Users/perci/CLionProjects/CellGame/src/ui/widget/game/GameWidget.h">
+			<Option target="CellGame"/>
+		</Unit>
 		<Unit filename="C:/Users/perci/CLionProjects/CellGame/src/ui/window/mainwindow/MainWindow.cpp">
 			<Option target="CellGame"/>
 		</Unit>
 		<Unit filename="C:/Users/perci/CLionProjects/CellGame/src/ui/window/mainwindow/MainWindow.h">
+			<Option target="CellGame"/>
+		</Unit>
+		<Unit filename="C:/Users/perci/CLionProjects/CellGame/src/utility/Rand_int.h">
 			<Option target="CellGame"/>
 		</Unit>
 		<Unit filename="C:/Users/perci/CLionProjects/CellGame/CMakeLists.txt">

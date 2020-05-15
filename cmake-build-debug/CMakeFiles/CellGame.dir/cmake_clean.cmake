@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CellGame_autogen"
   "CMakeFiles/CellGame.dir/CellGame_autogen/mocs_compilation.cpp.obj"
   "CMakeFiles/CellGame.dir/main.cpp.obj"
+  "CMakeFiles/CellGame.dir/src/ui/widget/game/GameWidget.cpp.obj"
   "CMakeFiles/CellGame.dir/src/ui/window/mainwindow/MainWindow.cpp.obj"
   "CellGame.exe"
   "CellGame.exe.manifest"

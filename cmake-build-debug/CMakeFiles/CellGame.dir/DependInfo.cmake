@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/perci/CLionProjects/CellGame/cmake-build-debug/CellGame_autogen/mocs_compilation.cpp" "C:/Users/perci/CLionProjects/CellGame/cmake-build-debug/CMakeFiles/CellGame.dir/CellGame_autogen/mocs_compilation.cpp.obj"
   "C:/Users/perci/CLionProjects/CellGame/main.cpp" "C:/Users/perci/CLionProjects/CellGame/cmake-build-debug/CMakeFiles/CellGame.dir/main.cpp.obj"
+  "C:/Users/perci/CLionProjects/CellGame/src/ui/widget/game/GameWidget.cpp" "C:/Users/perci/CLionProjects/CellGame/cmake-build-debug/CMakeFiles/CellGame.dir/src/ui/widget/game/GameWidget.cpp.obj"
   "C:/Users/perci/CLionProjects/CellGame/src/ui/window/mainwindow/MainWindow.cpp" "C:/Users/perci/CLionProjects/CellGame/cmake-build-debug/CMakeFiles/CellGame.dir/src/ui/window/mainwindow/MainWindow.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

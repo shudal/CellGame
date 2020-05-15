@@ -250,9 +250,11 @@ CMakeFiles/CellGame.dir/main.cpp.obj: D:/install/mingwsecond/5.12.8/mingw73_64/i
 CMakeFiles/CellGame.dir/main.cpp.obj: D:/install/mingwsecond/5.12.8/mingw73_64/include/QtWidgets/qtwidgetsglobal.h
 CMakeFiles/CellGame.dir/main.cpp.obj: D:/install/mingwsecond/5.12.8/mingw73_64/include/QtWidgets/qwidget.h
 
+CMakeFiles/CellGame.dir/src/ui/widget/game/GameWidget.cpp.obj: ../src/utility/CellGameCore.h
 CMakeFiles/CellGame.dir/src/ui/widget/game/GameWidget.cpp.obj: ../src/include/Config.h
 CMakeFiles/CellGame.dir/src/ui/widget/game/GameWidget.cpp.obj: ../src/ui/widget/game/GameWidget.cpp
 CMakeFiles/CellGame.dir/src/ui/widget/game/GameWidget.cpp.obj: ../src/ui/widget/game/GameWidget.h
+CMakeFiles/CellGame.dir/src/ui/widget/game/GameWidget.cpp.obj: D:/install/mingwsecond/5.12.8/mingw73_64/include/QtCore/QMetaType
 CMakeFiles/CellGame.dir/src/ui/widget/game/GameWidget.cpp.obj: D:/install/mingwsecond/5.12.8/mingw73_64/include/QtCore/qalgorithms.h
 CMakeFiles/CellGame.dir/src/ui/widget/game/GameWidget.cpp.obj: D:/install/mingwsecond/5.12.8/mingw73_64/include/QtCore/qarraydata.h
 CMakeFiles/CellGame.dir/src/ui/widget/game/GameWidget.cpp.obj: D:/install/mingwsecond/5.12.8/mingw73_64/include/QtCore/qatomic.h
@@ -507,4 +509,7 @@ CMakeFiles/CellGame.dir/src/ui/window/mainwindow/MainWindow.cpp.obj: D:/install/
 CMakeFiles/CellGame.dir/src/ui/window/mainwindow/MainWindow.cpp.obj: D:/install/mingwsecond/5.12.8/mingw73_64/include/QtWidgets/qtwidgets-config.h
 CMakeFiles/CellGame.dir/src/ui/window/mainwindow/MainWindow.cpp.obj: D:/install/mingwsecond/5.12.8/mingw73_64/include/QtWidgets/qtwidgetsglobal.h
 CMakeFiles/CellGame.dir/src/ui/window/mainwindow/MainWindow.cpp.obj: D:/install/mingwsecond/5.12.8/mingw73_64/include/QtWidgets/qwidget.h
+
+CMakeFiles/CellGame.dir/src/utility/CellGameCore.cpp.obj: ../src/utility/CellGameCore.cpp
+CMakeFiles/CellGame.dir/src/utility/CellGameCore.cpp.obj: ../src/utility/CellGameCore.h
 

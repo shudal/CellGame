@@ -6,6 +6,9 @@
 #include "../../../include/Config.h"
 #include <thread>
 #include <chrono>
+#include <src/utility/CellGameCore.h>
+#include <QMetaType>
+
 
 GameWidget::GameWidget() {
     commonInit();
@@ -19,6 +22,8 @@ void GameWidget::commonInit() {
     setupVar();
     setupUi();
     setupTimer();
+    qRegisterMetaType<std::vector<std::vector<int>>>("std::vector<std::vector<int>>");
+    connect(this, SIGNAL(changeStateSignal(std::vector<std::vector<int>>)), this, SLOT(changeStateSlot(std::vector<std::vector<int>>)));
 }
 
 // setupUi在setupVar后
@@ -62,14 +67,43 @@ void GameWidget::setupVar() {
 }
 
 void GameWidget::setupTimer() {
-    std::thread thread1(evolve, 2);
+    std::thread thread1(evolve, 2, this);
     thread1.detach();
 }
 
-void GameWidget::evolve(int circle_seconds) {
+void GameWidget::evolve(int circle_seconds, GameWidget * gw) {
+    static CellGameCore core;
     while (true) {
         std::this_thread::sleep_for(std::chrono::seconds(circle_seconds));
+        gw->changeStateSignal(core.process(gw->cells_status_));
         qDebug("tick");
+    }
+}
+
+void GameWidget::changeStateSlot(std::vector<std::vector<int>> vs) {
+    qDebug("change state slots");
+    cells_status_ = vs;
+    for (auto i=0; i<cells_.size(); i++) {
+        for (auto k=0; k<cells_[i].size(); k++) {
+            bool hap = true;
+            if (i < cells_status_.size() && k < cells_status_[i].size()) {
+                if (cells_status_[i][k] == Config::GetConfig()->STATUS_SAD) {
+                    hap = false;
+                }
+            } else {
+                hap = false;
+            }
+
+            QPixmap pix;
+            if (hap) {
+                pix = hap_pix_map_;
+            } else {
+                pix = sad_pix_map_;
+            }
+
+            cells_[i][k]->resize(cell_width_, cell_height_);
+            cells_[i][k]->setPixmap(pix.scaled(cells_[i][k]->size(), Qt::KeepAspectRatio));
+        }
     }
 }
 

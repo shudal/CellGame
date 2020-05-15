@@ -15,12 +15,16 @@ class GameWidget : public QWidget {
 public:
     GameWidget();
     GameWidget(std::vector<std::vector<int>>);
+
+    private slots :
+    void changeStateSlot(std::vector<std::vector<int>>);
 private:
     void commonInit();
     void setupUi();
     void setupVar();
     void setupTimer();
-    static void evolve(int);
+    static void evolve(int, GameWidget*);
+
     std::unique_ptr<QGridLayout> cell_grid_layout_;
     double cell_width_;
     double cell_height_;
@@ -31,6 +35,8 @@ private:
     QPixmap hap_pix_map_;
     QImage sad_img_;
     QImage hap_img_;
+signals :
+    void changeStateSignal(std::vector<std::vector<int>>);
 };
 
 

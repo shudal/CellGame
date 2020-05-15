@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+../src/utility/CellGameCore.h
+vector
+-
+
 C:/Users/perci/CLionProjects/CellGame/src/include/Config.h
 string
 -
@@ -19,6 +23,10 @@ thread
 -
 chrono
 -
+src/utility/CellGameCore.h
+-
+QMetaType
+-
 
 C:/Users/perci/CLionProjects/CellGame/src/ui/widget/game/GameWidget.h
 QWidget
@@ -29,6 +37,18 @@ memory
 -
 QtWidgets/QLabel
 -
+
+C:/Users/perci/CLionProjects/CellGame/src/utility/CellGameCore.cpp
+CellGameCore.h
+C:/Users/perci/CLionProjects/CellGame/src/utility/CellGameCore.h
+
+C:/Users/perci/CLionProjects/CellGame/src/utility/CellGameCore.h
+vector
+-
+
+D:/install/mingwsecond/5.12.8/mingw73_64/include/QtCore/QMetaType
+qmetatype.h
+D:/install/mingwsecond/5.12.8/mingw73_64/include/QtCore/qmetatype.h
 
 D:/install/mingwsecond/5.12.8/mingw73_64/include/QtCore/qalgorithms.h
 QtCore/qglobal.h

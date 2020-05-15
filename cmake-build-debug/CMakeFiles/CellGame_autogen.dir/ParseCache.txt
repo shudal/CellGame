@@ -16,3 +16,5 @@ C:/Users/perci/CLionProjects/CellGame/src/ui/widget/game/GameWidget.h
  mmc:Q_OBJECT
 C:/Users/perci/CLionProjects/CellGame/src/ui/widget/game/GameWidget.cpp
 C:/Users/perci/CLionProjects/CellGame/src/utility/Rand_int.h
+C:/Users/perci/CLionProjects/CellGame/src/utility/CellGameCore.h
+C:/Users/perci/CLionProjects/CellGame/src/utility/CellGameCore.cpp

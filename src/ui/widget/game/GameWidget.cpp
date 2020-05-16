@@ -8,7 +8,7 @@
 #include <chrono>
 #include <src/utility/CellGameCore.h>
 #include <QMetaType>
-
+#include <QIcon>
 
 GameWidget::GameWidget() {
     commonInit();
@@ -25,11 +25,16 @@ void GameWidget::commonInit() {
     qRegisterMetaType<std::vector<std::vector<int>>>("std::vector<std::vector<int>>");
     connect(this, SIGNAL(changeStateSignal(std::vector<std::vector<int>>)), this, SLOT(changeStateSlot(std::vector<std::vector<int>>)));
 
+    this->setWindowTitle(Config::GetConfig()->MAIN_TITLE.c_str());
+
     QPixmap bkgnd(Config::GetConfig()->MAIN_BG_SRC.c_str());
     bkgnd = bkgnd.scaled(this->size(), Qt::IgnoreAspectRatio);
     QPalette palette;
     palette.setBrush(QPalette::Background, bkgnd);
     this->setPalette(palette);
+
+    this->setWindowIcon(QIcon(Config::GetConfig()->MAIN_ICON_SRC.c_str()));
+
 }
 
 // setupUi在setupVar后
@@ -73,22 +78,36 @@ void GameWidget::setupVar() {
 }
 
 void GameWidget::setupTimer() {
-    std::thread thread1(evolve, 2, this);
+    p_thread_quit = false;
+    std::thread thread1(evolve, 2, this, std::ref(p_thread_quit));
     thread1.detach();
 }
 
-void GameWidget::evolve(int circle_seconds, GameWidget * gw) {
+void GameWidget::evolve(int circle_seconds, GameWidget * gw, std::reference_wrapper<bool> p_quit) {
     static CellGameCore core;
     while (true) {
+        if (p_quit) {
+            break;
+        }
         std::this_thread::sleep_for(std::chrono::seconds(circle_seconds));
         gw->changeStateSignal(core.process(gw->cells_status_));
         qDebug("tick");
     }
+    qDebug("tick thread exit.");
 }
 
 void GameWidget::changeStateSlot(std::vector<std::vector<int>> vs) {
     qDebug("change state slots");
     cells_status_ = vs;
+    setCellStatus();
+}
+
+void GameWidget::closeEvent(QCloseEvent *e) {
+    p_thread_quit = true;
+    qDebug("game widget close");
+}
+
+void GameWidget::setCellStatus() {
     for (auto i=0; i<cells_.size(); i++) {
         for (auto k=0; k<cells_[i].size(); k++) {
             bool hap = true;

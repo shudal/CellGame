@@ -80,6 +80,7 @@ CMakeFiles/CellGame.dir/CellGame_autogen/mocs_compilation.cpp.obj
  D:/install/mingwsecond/5.12.8/mingw73_64/include/QtCore/qvarlengtharray.h
  D:/install/mingwsecond/5.12.8/mingw73_64/include/QtCore/qvector.h
  D:/install/mingwsecond/5.12.8/mingw73_64/include/QtCore/qversiontagging.h
+ D:/install/mingwsecond/5.12.8/mingw73_64/include/QtGui/QCloseEvent
  D:/install/mingwsecond/5.12.8/mingw73_64/include/QtGui/qbrush.h
  D:/install/mingwsecond/5.12.8/mingw73_64/include/QtGui/qcolor.h
  D:/install/mingwsecond/5.12.8/mingw73_64/include/QtGui/qcursor.h
@@ -202,6 +203,7 @@ CMakeFiles/CellGame.dir/main.cpp.obj
  D:/install/mingwsecond/5.12.8/mingw73_64/include/QtCore/qvarlengtharray.h
  D:/install/mingwsecond/5.12.8/mingw73_64/include/QtCore/qvector.h
  D:/install/mingwsecond/5.12.8/mingw73_64/include/QtCore/qversiontagging.h
+ D:/install/mingwsecond/5.12.8/mingw73_64/include/QtGui/QCloseEvent
  D:/install/mingwsecond/5.12.8/mingw73_64/include/QtGui/qbrush.h
  D:/install/mingwsecond/5.12.8/mingw73_64/include/QtGui/qcolor.h
  D:/install/mingwsecond/5.12.8/mingw73_64/include/QtGui/qcursor.h
@@ -328,6 +330,8 @@ CMakeFiles/CellGame.dir/src/ui/widget/game/GameWidget.cpp.obj
  D:/install/mingwsecond/5.12.8/mingw73_64/include/QtCore/qvarlengtharray.h
  D:/install/mingwsecond/5.12.8/mingw73_64/include/QtCore/qvector.h
  D:/install/mingwsecond/5.12.8/mingw73_64/include/QtCore/qversiontagging.h
+ D:/install/mingwsecond/5.12.8/mingw73_64/include/QtGui/QCloseEvent
+ D:/install/mingwsecond/5.12.8/mingw73_64/include/QtGui/QIcon
  D:/install/mingwsecond/5.12.8/mingw73_64/include/QtGui/qbrush.h
  D:/install/mingwsecond/5.12.8/mingw73_64/include/QtGui/qcolor.h
  D:/install/mingwsecond/5.12.8/mingw73_64/include/QtGui/qcursor.h
@@ -335,6 +339,7 @@ CMakeFiles/CellGame.dir/src/ui/widget/game/GameWidget.cpp.obj
  D:/install/mingwsecond/5.12.8/mingw73_64/include/QtGui/qfont.h
  D:/install/mingwsecond/5.12.8/mingw73_64/include/QtGui/qfontinfo.h
  D:/install/mingwsecond/5.12.8/mingw73_64/include/QtGui/qfontmetrics.h
+ D:/install/mingwsecond/5.12.8/mingw73_64/include/QtGui/qicon.h
  D:/install/mingwsecond/5.12.8/mingw73_64/include/QtGui/qimage.h
  D:/install/mingwsecond/5.12.8/mingw73_64/include/QtGui/qkeysequence.h
  D:/install/mingwsecond/5.12.8/mingw73_64/include/QtGui/qmatrix.h
@@ -449,6 +454,7 @@ CMakeFiles/CellGame.dir/src/ui/window/mainwindow/MainWindow.cpp.obj
  D:/install/mingwsecond/5.12.8/mingw73_64/include/QtCore/qvarlengtharray.h
  D:/install/mingwsecond/5.12.8/mingw73_64/include/QtCore/qvector.h
  D:/install/mingwsecond/5.12.8/mingw73_64/include/QtCore/qversiontagging.h
+ D:/install/mingwsecond/5.12.8/mingw73_64/include/QtGui/QCloseEvent
  D:/install/mingwsecond/5.12.8/mingw73_64/include/QtGui/qbrush.h
  D:/install/mingwsecond/5.12.8/mingw73_64/include/QtGui/qcolor.h
  D:/install/mingwsecond/5.12.8/mingw73_64/include/QtGui/qcursor.h

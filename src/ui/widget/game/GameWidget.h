@@ -9,6 +9,7 @@
 #include <QtWidgets/QGridLayout>
 #include <memory>
 #include <QtWidgets/QLabel>
+#include <QCloseEvent>
 
 class GameWidget : public QWidget {
     Q_OBJECT
@@ -23,7 +24,9 @@ private:
     void setupUi();
     void setupVar();
     void setupTimer();
-    static void evolve(int, GameWidget*);
+    void setCellStatus();
+    void closeEvent(QCloseEvent *);
+    static void evolve(int, GameWidget*, std::reference_wrapper<bool>);
 
     std::unique_ptr<QGridLayout> cell_grid_layout_;
     double cell_width_;
@@ -35,6 +38,8 @@ private:
     QPixmap hap_pix_map_;
     QImage sad_img_;
     QImage hap_img_;
+
+    bool p_thread_quit;
 signals :
     void changeStateSignal(std::vector<std::vector<int>>);
 };

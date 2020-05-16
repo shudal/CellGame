@@ -26,7 +26,6 @@ private:
     void setupTimer();
     void setCellStatus();
     void closeEvent(QCloseEvent *);
-    static void evolve(int, GameWidget*, std::reference_wrapper<bool>);
 
     std::unique_ptr<QGridLayout> cell_grid_layout_;
     double cell_width_;

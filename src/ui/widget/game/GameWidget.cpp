@@ -79,21 +79,25 @@ void GameWidget::setupVar() {
 
 void GameWidget::setupTimer() {
     p_thread_quit = false;
-    std::thread thread1(evolve, 2, this, std::ref(p_thread_quit));
-    thread1.detach();
-}
-
-void GameWidget::evolve(int circle_seconds, GameWidget * gw, std::reference_wrapper<bool> p_quit) {
-    static CellGameCore core;
-    while (true) {
-        if (p_quit) {
-            break;
+    int circle_seconds = 2;
+    GameWidget *gw = this;
+    std::reference_wrapper<bool> p_quit = std::ref(p_thread_quit);
+    // 这里必须要是 copy，而不能是 reference,
+    // 因为thread2用的是setupTimer()函数内局部变量
+    // 若reference, 这些局部变量会在setupTimer()结束时销毁，从而导致thread2里出现悬垂指针现象。
+    std::thread thread2([=]{
+        static CellGameCore core;
+        while (true) {
+            if (p_quit) {
+                break;
+            }
+            std::this_thread::sleep_for(std::chrono::seconds(circle_seconds));
+            gw->changeStateSignal(core.process(gw->cells_status_));
+            qDebug("tick");
         }
-        std::this_thread::sleep_for(std::chrono::seconds(circle_seconds));
-        gw->changeStateSignal(core.process(gw->cells_status_));
-        qDebug("tick");
-    }
-    qDebug("tick thread exit.");
+        qDebug("tick thread exit.");
+    });
+    thread2.detach();
 }
 
 void GameWidget::changeStateSlot(std::vector<std::vector<int>> vs) {

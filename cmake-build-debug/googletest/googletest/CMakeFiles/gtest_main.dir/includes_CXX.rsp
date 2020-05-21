@@ -1,0 +1,1 @@
+-IC:/Users/perci/CLionProjects/CellGame/cmake-build-debug/googletest/googletest -IC:/Users/perci/CLionProjects/CellGame/cmake-build-debug/googletest/googletest/gtest_main_autogen/include -isystem C:/Users/perci/CLionProjects/CellGame/googletest/googletest -isystem C:/Users/perci/CLionProjects/CellGame/googletest/googletest/include 

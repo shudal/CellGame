@@ -2,8 +2,18 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="CellGame" targetName="CellGame" />
       <config projectName="CellGame" targetName="CellGame_autogen" />
+      <config projectName="CellGame" targetName="gtest" />
+      <config projectName="CellGame" targetName="gmock_main" />
+      <config projectName="CellGame" targetName="CellGame" />
+      <config projectName="CellGame" targetName="gtest_main_autogen" />
+      <config projectName="CellGame" targetName="mytest" />
+      <config projectName="CellGame" targetName="gmock_main_autogen" />
+      <config projectName="CellGame" targetName="gtest_autogen" />
+      <config projectName="CellGame" targetName="gmock" />
+      <config projectName="CellGame" targetName="gmock_autogen" />
+      <config projectName="CellGame" targetName="mytest_autogen" />
+      <config projectName="CellGame" targetName="gtest_main" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -31,6 +41,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="cf.advertisement.text.has.clang-format" value="true" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
@@ -42,7 +53,19 @@
       <recent name="C:\Users\perci\CLionProjects\CellGame\src\class" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.CellGame">
+  <component name="RunManager" selected="Google Test.mytest">
+    <configuration name="CellGameCoreTest.SampleTest" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CellGame" TARGET_NAME="CellGame" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CellGame" RUN_TARGET_NAME="CellGame" TEST_CLASS="CellGameCoreTest" TEST_METHOD="SampleTest" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mytest" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CellGame" TARGET_NAME="mytest" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CellGame" RUN_TARGET_NAME="mytest" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CellGame" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CellGame" TARGET_NAME="CellGame" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="CellGame" RUN_TARGET_NAME="CellGame">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -53,10 +76,71 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="gmock" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CellGame" TARGET_NAME="gmock" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gmock_autogen" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CellGame" TARGET_NAME="gmock_autogen" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gmock_main" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CellGame" TARGET_NAME="gmock_main" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gmock_main_autogen" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CellGame" TARGET_NAME="gmock_main_autogen" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gtest" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CellGame" TARGET_NAME="gtest" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gtest_autogen" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CellGame" TARGET_NAME="gtest_autogen" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CellGame" TARGET_NAME="gtest_main" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gtest_main_autogen" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CellGame" TARGET_NAME="gtest_main_autogen" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mytest_autogen" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="CellGame" TARGET_NAME="mytest_autogen" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="CMake Application.CellGame" />
       <item itemvalue="CMake Application.CellGame_autogen" />
+      <item itemvalue="CMake Application.mytest_autogen" />
+      <item itemvalue="CMake Application.gmock" />
+      <item itemvalue="CMake Application.gmock_autogen" />
+      <item itemvalue="CMake Application.gmock_main" />
+      <item itemvalue="CMake Application.gmock_main_autogen" />
+      <item itemvalue="CMake Application.gtest" />
+      <item itemvalue="CMake Application.gtest_autogen" />
+      <item itemvalue="CMake Application.gtest_main" />
+      <item itemvalue="CMake Application.gtest_main_autogen" />
+      <item itemvalue="Google Test.mytest" />
+      <item itemvalue="Google Test.CellGameCoreTest.SampleTest" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Google Test.CellGameCoreTest.SampleTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -70,55 +154,76 @@
       <workItem from="1589453942738" duration="12740000" />
       <workItem from="1589527255173" duration="23979000" />
       <workItem from="1589588347802" duration="6367000" />
-      <workItem from="1589611073288" duration="2107000" />
+      <workItem from="1589611073288" duration="2741000" />
+      <workItem from="1589684499123" duration="577000" />
+      <workItem from="1589859050052" duration="1500000" />
+      <workItem from="1589948553351" duration="2016000" />
+      <workItem from="1590044781440" duration="5890000" />
     </task>
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="4" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590048545951">
+      <screen x="0" y="0" width="1097" height="577" />
+    </state>
+    <state x="4" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1097.577@0.0.1097.577" timestamp="1590048545951" />
+    <state x="247" y="0" key="#gtest_autogen" timestamp="1590048244442">
+      <screen x="0" y="0" width="1097" height="577" />
+    </state>
+    <state x="247" y="0" key="#gtest_autogen/0.0.1097.577@0.0.1097.577" timestamp="1590048244442" />
     <state x="329" y="43" key="FileChooserDialogImpl" timestamp="1589452215846">
       <screen x="0" y="0" width="1097" height="577" />
     </state>
     <state x="329" y="43" key="FileChooserDialogImpl/0.0.1097.577@0.0.1097.577" timestamp="1589452215846" />
-    <state width="1054" height="150" key="GridCell.Tab.0.bottom" timestamp="1589634791020">
+    <state width="1054" height="46" key="GridCell.Tab.0.bottom" timestamp="1590051934181">
       <screen x="0" y="0" width="1097" height="577" />
     </state>
-    <state width="1054" height="150" key="GridCell.Tab.0.bottom/0.0.1097.577@0.0.1097.577" timestamp="1589634791020" />
+    <state width="1054" height="46" key="GridCell.Tab.0.bottom/0.0.1097.577@0.0.1097.577" timestamp="1590051934181" />
     <state width="1054" height="261" key="GridCell.Tab.0.bottom/0.0.1097.617@0.0.1097.617" timestamp="1589538146604" />
-    <state width="1054" height="150" key="GridCell.Tab.0.center" timestamp="1589634791020">
+    <state width="1054" height="150" key="GridCell.Tab.0.bottom/0.40.1097.577@0.40.1097.577" timestamp="1589861538836" />
+    <state width="1054" height="46" key="GridCell.Tab.0.center" timestamp="1590051934180">
       <screen x="0" y="0" width="1097" height="577" />
     </state>
-    <state width="1054" height="150" key="GridCell.Tab.0.center/0.0.1097.577@0.0.1097.577" timestamp="1589634791020" />
+    <state width="1054" height="46" key="GridCell.Tab.0.center/0.0.1097.577@0.0.1097.577" timestamp="1590051934180" />
     <state width="1054" height="261" key="GridCell.Tab.0.center/0.0.1097.617@0.0.1097.617" timestamp="1589538146604" />
-    <state width="1054" height="150" key="GridCell.Tab.0.left" timestamp="1589634791020">
+    <state width="1054" height="150" key="GridCell.Tab.0.center/0.40.1097.577@0.40.1097.577" timestamp="1589861538835" />
+    <state width="1054" height="46" key="GridCell.Tab.0.left" timestamp="1590051934180">
       <screen x="0" y="0" width="1097" height="577" />
     </state>
-    <state width="1054" height="150" key="GridCell.Tab.0.left/0.0.1097.577@0.0.1097.577" timestamp="1589634791020" />
+    <state width="1054" height="46" key="GridCell.Tab.0.left/0.0.1097.577@0.0.1097.577" timestamp="1590051934180" />
     <state width="1054" height="261" key="GridCell.Tab.0.left/0.0.1097.617@0.0.1097.617" timestamp="1589538146604" />
-    <state width="1054" height="150" key="GridCell.Tab.0.right" timestamp="1589634791020">
+    <state width="1054" height="150" key="GridCell.Tab.0.left/0.40.1097.577@0.40.1097.577" timestamp="1589861538835" />
+    <state width="1054" height="46" key="GridCell.Tab.0.right" timestamp="1590051934180">
       <screen x="0" y="0" width="1097" height="577" />
     </state>
-    <state width="1054" height="150" key="GridCell.Tab.0.right/0.0.1097.577@0.0.1097.577" timestamp="1589634791020" />
+    <state width="1054" height="46" key="GridCell.Tab.0.right/0.0.1097.577@0.0.1097.577" timestamp="1590051934180" />
     <state width="1054" height="261" key="GridCell.Tab.0.right/0.0.1097.617@0.0.1097.617" timestamp="1589538146604" />
-    <state width="1054" height="189" key="GridCell.Tab.1.bottom" timestamp="1589634715703">
+    <state width="1054" height="150" key="GridCell.Tab.0.right/0.40.1097.577@0.40.1097.577" timestamp="1589861538836" />
+    <state width="1054" height="140" key="GridCell.Tab.1.bottom" timestamp="1590050430218">
       <screen x="0" y="0" width="1097" height="577" />
     </state>
-    <state width="1054" height="189" key="GridCell.Tab.1.bottom/0.0.1097.577@0.0.1097.577" timestamp="1589634715703" />
-    <state width="1054" height="189" key="GridCell.Tab.1.center" timestamp="1589634715703">
+    <state width="1054" height="140" key="GridCell.Tab.1.bottom/0.0.1097.577@0.0.1097.577" timestamp="1590050430218" />
+    <state width="1054" height="189" key="GridCell.Tab.1.bottom/0.40.1097.577@0.40.1097.577" timestamp="1589861538793" />
+    <state width="1054" height="140" key="GridCell.Tab.1.center" timestamp="1590050430217">
       <screen x="0" y="0" width="1097" height="577" />
     </state>
-    <state width="1054" height="189" key="GridCell.Tab.1.center/0.0.1097.577@0.0.1097.577" timestamp="1589634715703" />
-    <state width="1054" height="189" key="GridCell.Tab.1.left" timestamp="1589634715703">
+    <state width="1054" height="140" key="GridCell.Tab.1.center/0.0.1097.577@0.0.1097.577" timestamp="1590050430217" />
+    <state width="1054" height="189" key="GridCell.Tab.1.center/0.40.1097.577@0.40.1097.577" timestamp="1589861538792" />
+    <state width="1054" height="140" key="GridCell.Tab.1.left" timestamp="1590050430217">
       <screen x="0" y="0" width="1097" height="577" />
     </state>
-    <state width="1054" height="189" key="GridCell.Tab.1.left/0.0.1097.577@0.0.1097.577" timestamp="1589634715703" />
-    <state width="1054" height="189" key="GridCell.Tab.1.right" timestamp="1589634715703">
+    <state width="1054" height="140" key="GridCell.Tab.1.left/0.0.1097.577@0.0.1097.577" timestamp="1590050430217" />
+    <state width="1054" height="189" key="GridCell.Tab.1.left/0.40.1097.577@0.40.1097.577" timestamp="1589861538792" />
+    <state width="1054" height="140" key="GridCell.Tab.1.right" timestamp="1590050430218">
       <screen x="0" y="0" width="1097" height="577" />
     </state>
-    <state width="1054" height="189" key="GridCell.Tab.1.right/0.0.1097.577@0.0.1097.577" timestamp="1589634715703" />
-    <state x="50" y="0" width="1041" height="577" key="SettingsEditor" timestamp="1589456624542">
-      <screen x="0" y="0" width="1097" height="577" />
+    <state width="1054" height="140" key="GridCell.Tab.1.right/0.0.1097.577@0.0.1097.577" timestamp="1590050430218" />
+    <state width="1054" height="189" key="GridCell.Tab.1.right/0.40.1097.577@0.40.1097.577" timestamp="1589861538792" />
+    <state x="50" y="40" width="1041" height="577" key="SettingsEditor" timestamp="1589859069065">
+      <screen x="0" y="40" width="1097" height="577" />
     </state>
     <state x="50" y="0" width="1041" height="577" key="SettingsEditor/0.0.1097.577@0.0.1097.577" timestamp="1589456624542" />
+    <state x="50" y="40" key="SettingsEditor/0.40.1097.577@0.40.1097.577" timestamp="1589859069065" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -132,6 +237,11 @@
           <url>file://$PROJECT_DIR$/src/ui/widget/game/GameWidget.cpp</url>
           <line>91</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/test/utility/CellGameCoreTest.cpp</url>
+          <line>20</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

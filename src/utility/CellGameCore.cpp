@@ -10,8 +10,8 @@ CellGameCore::CellGameCore() {
 
 std::vector<std::vector<int>> CellGameCore::process(std::vector<std::vector<int>> vs) {
     setFlag();
-    int next_x[8] = {-1,-1,0,1,1,1,0,-1};
-    int next_y[8] = {0,1,1,1,0,-1,-1,-1};
+    int next_x[8] = {-1,-1, 0, 1, 1, 1, 0,-1};
+    int next_y[8] = {0,  1, 1, 1, 0,-1,-1,-1};
     int len_x = vs.size();
     int len_y = vs[0].size();
     std::vector<std::vector<int>> re(len_x,std::vector<int>(len_y,0));

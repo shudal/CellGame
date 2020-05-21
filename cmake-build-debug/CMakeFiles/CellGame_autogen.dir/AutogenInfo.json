@@ -54,6 +54,10 @@
 		"D:/install/mingwsecond/5.12.8/mingw73_64/include/QtWidgets",
 		"D:/install/mingwsecond/5.12.8/mingw73_64/include/QtGui",
 		"D:/install/mingwsecond/5.12.8/mingw73_64/include/QtANGLE",
+		"C:/Users/perci/CLionProjects/CellGame/googletest/googletest/include",
+		"C:/Users/perci/CLionProjects/CellGame/googletest/googlemock/include",
+		"C:/Users/perci/CLionProjects/CellGame/googletest/googletest",
+		"C:/Users/perci/CLionProjects/CellGame/googletest/googlemock",
 		"D:/install/mingwsecond/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++",
 		"D:/install/mingwsecond/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32",
 		"D:/install/mingwsecond/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward",
@@ -74,7 +78,10 @@
 	],
 	"MOC_PREDEFS_FILE" : "C:/Users/perci/CLionProjects/CellGame/cmake-build-debug/CellGame_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
-	"MOC_SKIP" : [],
+	"MOC_SKIP" : 
+	[
+		"C:/Users/perci/CLionProjects/CellGame/cmake-build-debug/mytest_autogen/mocs_compilation.cpp"
+	],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 2,
 	"PARSE_CACHE_FILE" : "C:/Users/perci/CLionProjects/CellGame/cmake-build-debug/CMakeFiles/CellGame_autogen.dir/ParseCache.txt",
@@ -85,6 +92,10 @@
 	"SOURCES" : 
 	[
 		[ "C:/Users/perci/CLionProjects/CellGame/main.cpp", "MU" ],
+		[
+			"C:/Users/perci/CLionProjects/CellGame/src/test/utility/CellGameCoreTest.cpp",
+			"MU"
+		],
 		[
 			"C:/Users/perci/CLionProjects/CellGame/src/ui/widget/game/GameWidget.cpp",
 			"MU"
@@ -100,7 +111,10 @@
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
-	"UIC_SKIP" : [],
+	"UIC_SKIP" : 
+	[
+		"C:/Users/perci/CLionProjects/CellGame/cmake-build-debug/mytest_autogen/mocs_compilation.cpp"
+	],
 	"UIC_UI_FILES" : [],
 	"VERBOSITY" : 0
 }

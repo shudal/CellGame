@@ -1,0 +1,2 @@
+D:\install\mingwsecond\Tools\mingw730_64\bin\ar.exe qc ..\..\lib\libgmockd.a  CMakeFiles/gmock.dir/gmock_autogen/mocs_compilation.cpp.obj CMakeFiles/gmock.dir/src/gmock-all.cc.obj
+D:\install\mingwsecond\Tools\mingw730_64\bin\ranlib.exe ..\..\lib\libgmockd.a

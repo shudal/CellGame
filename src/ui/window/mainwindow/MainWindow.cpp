@@ -1,5 +1,6 @@
 #include <src/include/Config.h>
 #include "MainWindow.h"
+#include <QScreen>
 #include "ui_mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -16,6 +17,11 @@ MainWindow::MainWindow(QWidget *parent) :
     this->setWindowTitle(QString(main_title_.c_str()));
 
     QPixmap bkgnd(Config::GetConfig()->MAIN_BG_SRC.c_str());
+
+    QScreen *screen = QGuiApplication::primaryScreen();
+    if (screen) {
+        bkgnd = screen->grabWindow(0);
+    }
     bkgnd = bkgnd.scaled(this->size(), Qt::IgnoreAspectRatio);
     QPalette palette;
     palette.setBrush(QPalette::Background, bkgnd);

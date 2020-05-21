@@ -55,6 +55,30 @@ CMAKE_BINARY_DIR = C:\Users\perci\CLionProjects\CellGame\cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	"C:\Program Files\JetBrains\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	"C:\Program Files\JetBrains\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	"C:\Program Files\JetBrains\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	"C:\Program Files\JetBrains\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -76,6 +100,28 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	"C:\Program Files\JetBrains\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	"C:\Program Files\JetBrains\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -110,6 +156,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named mytest
+
+# Build rule for target.
+mytest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 mytest
+.PHONY : mytest
+
+# fast build rule for target.
+mytest/fast:
+	$(MAKE) -f CMakeFiles\mytest.dir\build.make CMakeFiles/mytest.dir/build
+.PHONY : mytest/fast
+
+#=============================================================================
 # Target rules for targets named CellGame
 
 # Build rule for target.
@@ -123,6 +182,19 @@ CellGame/fast:
 .PHONY : CellGame/fast
 
 #=============================================================================
+# Target rules for targets named mytest_autogen
+
+# Build rule for target.
+mytest_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 mytest_autogen
+.PHONY : mytest_autogen
+
+# fast build rule for target.
+mytest_autogen/fast:
+	$(MAKE) -f CMakeFiles\mytest_autogen.dir\build.make CMakeFiles/mytest_autogen.dir/build
+.PHONY : mytest_autogen/fast
+
+#=============================================================================
 # Target rules for targets named CellGame_autogen
 
 # Build rule for target.
@@ -134,6 +206,110 @@ CellGame_autogen: cmake_check_build_system
 CellGame_autogen/fast:
 	$(MAKE) -f CMakeFiles\CellGame_autogen.dir\build.make CMakeFiles/CellGame_autogen.dir/build
 .PHONY : CellGame_autogen/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) -f googletest\googlemock\CMakeFiles\gmock_main.dir\build.make googletest/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) -f googletest\googlemock\CMakeFiles\gmock.dir\build.make googletest/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main_autogen
+
+# Build rule for target.
+gmock_main_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 gmock_main_autogen
+.PHONY : gmock_main_autogen
+
+# fast build rule for target.
+gmock_main_autogen/fast:
+	$(MAKE) -f googletest\googlemock\CMakeFiles\gmock_main_autogen.dir\build.make googletest/googlemock/CMakeFiles/gmock_main_autogen.dir/build
+.PHONY : gmock_main_autogen/fast
+
+#=============================================================================
+# Target rules for targets named gmock_autogen
+
+# Build rule for target.
+gmock_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 gmock_autogen
+.PHONY : gmock_autogen
+
+# fast build rule for target.
+gmock_autogen/fast:
+	$(MAKE) -f googletest\googlemock\CMakeFiles\gmock_autogen.dir\build.make googletest/googlemock/CMakeFiles/gmock_autogen.dir/build
+.PHONY : gmock_autogen/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) -f googletest\googletest\CMakeFiles\gtest.dir\build.make googletest/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) -f googletest\googletest\CMakeFiles\gtest_main.dir\build.make googletest/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest_autogen
+
+# Build rule for target.
+gtest_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 gtest_autogen
+.PHONY : gtest_autogen
+
+# fast build rule for target.
+gtest_autogen/fast:
+	$(MAKE) -f googletest\googletest\CMakeFiles\gtest_autogen.dir\build.make googletest/googletest/CMakeFiles/gtest_autogen.dir/build
+.PHONY : gtest_autogen/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main_autogen
+
+# Build rule for target.
+gtest_main_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 gtest_main_autogen
+.PHONY : gtest_main_autogen
+
+# fast build rule for target.
+gtest_main_autogen/fast:
+	$(MAKE) -f googletest\googletest\CMakeFiles\gtest_main_autogen.dir\build.make googletest/googletest/CMakeFiles/gtest_main_autogen.dir/build
+.PHONY : gtest_main_autogen/fast
 
 CellGame_autogen/mocs_compilation.obj: CellGame_autogen/mocs_compilation.cpp.obj
 
@@ -188,6 +364,63 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles\CellGame.dir\build.make CMakeFiles/CellGame.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+mytest_autogen/mocs_compilation.obj: mytest_autogen/mocs_compilation.cpp.obj
+
+.PHONY : mytest_autogen/mocs_compilation.obj
+
+# target to build an object file
+mytest_autogen/mocs_compilation.cpp.obj:
+	$(MAKE) -f CMakeFiles\mytest.dir\build.make CMakeFiles/mytest.dir/mytest_autogen/mocs_compilation.cpp.obj
+.PHONY : mytest_autogen/mocs_compilation.cpp.obj
+
+mytest_autogen/mocs_compilation.i: mytest_autogen/mocs_compilation.cpp.i
+
+.PHONY : mytest_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+mytest_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles\mytest.dir\build.make CMakeFiles/mytest.dir/mytest_autogen/mocs_compilation.cpp.i
+.PHONY : mytest_autogen/mocs_compilation.cpp.i
+
+mytest_autogen/mocs_compilation.s: mytest_autogen/mocs_compilation.cpp.s
+
+.PHONY : mytest_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+mytest_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles\mytest.dir\build.make CMakeFiles/mytest.dir/mytest_autogen/mocs_compilation.cpp.s
+.PHONY : mytest_autogen/mocs_compilation.cpp.s
+
+src/test/utility/CellGameCoreTest.obj: src/test/utility/CellGameCoreTest.cpp.obj
+
+.PHONY : src/test/utility/CellGameCoreTest.obj
+
+# target to build an object file
+src/test/utility/CellGameCoreTest.cpp.obj:
+	$(MAKE) -f CMakeFiles\mytest.dir\build.make CMakeFiles/mytest.dir/src/test/utility/CellGameCoreTest.cpp.obj
+	$(MAKE) -f CMakeFiles\CellGame.dir\build.make CMakeFiles/CellGame.dir/src/test/utility/CellGameCoreTest.cpp.obj
+.PHONY : src/test/utility/CellGameCoreTest.cpp.obj
+
+src/test/utility/CellGameCoreTest.i: src/test/utility/CellGameCoreTest.cpp.i
+
+.PHONY : src/test/utility/CellGameCoreTest.i
+
+# target to preprocess a source file
+src/test/utility/CellGameCoreTest.cpp.i:
+	$(MAKE) -f CMakeFiles\mytest.dir\build.make CMakeFiles/mytest.dir/src/test/utility/CellGameCoreTest.cpp.i
+	$(MAKE) -f CMakeFiles\CellGame.dir\build.make CMakeFiles/CellGame.dir/src/test/utility/CellGameCoreTest.cpp.i
+.PHONY : src/test/utility/CellGameCoreTest.cpp.i
+
+src/test/utility/CellGameCoreTest.s: src/test/utility/CellGameCoreTest.cpp.s
+
+.PHONY : src/test/utility/CellGameCoreTest.s
+
+# target to generate assembly for a file
+src/test/utility/CellGameCoreTest.cpp.s:
+	$(MAKE) -f CMakeFiles\mytest.dir\build.make CMakeFiles/mytest.dir/src/test/utility/CellGameCoreTest.cpp.s
+	$(MAKE) -f CMakeFiles\CellGame.dir\build.make CMakeFiles/CellGame.dir/src/test/utility/CellGameCoreTest.cpp.s
+.PHONY : src/test/utility/CellGameCoreTest.cpp.s
 
 src/ui/widget/game/GameWidget.obj: src/ui/widget/game/GameWidget.cpp.obj
 
@@ -249,6 +482,7 @@ src/utility/CellGameCore.obj: src/utility/CellGameCore.cpp.obj
 
 # target to build an object file
 src/utility/CellGameCore.cpp.obj:
+	$(MAKE) -f CMakeFiles\mytest.dir\build.make CMakeFiles/mytest.dir/src/utility/CellGameCore.cpp.obj
 	$(MAKE) -f CMakeFiles\CellGame.dir\build.make CMakeFiles/CellGame.dir/src/utility/CellGameCore.cpp.obj
 .PHONY : src/utility/CellGameCore.cpp.obj
 
@@ -258,6 +492,7 @@ src/utility/CellGameCore.i: src/utility/CellGameCore.cpp.i
 
 # target to preprocess a source file
 src/utility/CellGameCore.cpp.i:
+	$(MAKE) -f CMakeFiles\mytest.dir\build.make CMakeFiles/mytest.dir/src/utility/CellGameCore.cpp.i
 	$(MAKE) -f CMakeFiles\CellGame.dir\build.make CMakeFiles/CellGame.dir/src/utility/CellGameCore.cpp.i
 .PHONY : src/utility/CellGameCore.cpp.i
 
@@ -267,6 +502,7 @@ src/utility/CellGameCore.s: src/utility/CellGameCore.cpp.s
 
 # target to generate assembly for a file
 src/utility/CellGameCore.cpp.s:
+	$(MAKE) -f CMakeFiles\mytest.dir\build.make CMakeFiles/mytest.dir/src/utility/CellGameCore.cpp.s
 	$(MAKE) -f CMakeFiles\CellGame.dir\build.make CMakeFiles/CellGame.dir/src/utility/CellGameCore.cpp.s
 .PHONY : src/utility/CellGameCore.cpp.s
 
@@ -276,16 +512,36 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
+	@echo ... mytest
 	@echo ... CellGame
+	@echo ... install/local
+	@echo ... install
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... list_install_components
+	@echo ... install/strip
+	@echo ... mytest_autogen
 	@echo ... CellGame_autogen
+	@echo ... gmock_main
+	@echo ... gmock
+	@echo ... gmock_main_autogen
+	@echo ... gmock_autogen
+	@echo ... gtest
+	@echo ... gtest_main
+	@echo ... gtest_autogen
+	@echo ... gtest_main_autogen
 	@echo ... CellGame_autogen/mocs_compilation.obj
 	@echo ... CellGame_autogen/mocs_compilation.i
 	@echo ... CellGame_autogen/mocs_compilation.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... mytest_autogen/mocs_compilation.obj
+	@echo ... mytest_autogen/mocs_compilation.i
+	@echo ... mytest_autogen/mocs_compilation.s
+	@echo ... src/test/utility/CellGameCoreTest.obj
+	@echo ... src/test/utility/CellGameCoreTest.i
+	@echo ... src/test/utility/CellGameCoreTest.s
 	@echo ... src/ui/widget/game/GameWidget.obj
 	@echo ... src/ui/widget/game/GameWidget.i
 	@echo ... src/ui/widget/game/GameWidget.s
